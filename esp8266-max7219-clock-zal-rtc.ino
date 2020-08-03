@@ -30,8 +30,8 @@ WiFiClient client;
 WiFiUDP udp;
 Ticker Timer, Timer2;//timer for regular update via NTP and some other function and timer2 for every 30 sec scrolltext for errors and wifi check
 NTPClient ntpClient(udp, "192.168.10.1", ((3*60*60)),6000000); // IST = GMT + 3, update interval 10 min.
-const char *ssid = "RUSUA Wi-Fi2.4";
-const char *password = "kolhoznaya12";
+const char *ssid = "Type-your-wifi-ssid";
+const char *password = "type-your-wifi-password";
 uint8_t debug_en = 2;//global variable for debug mode
 uint8_t New = 1;//global variable for the first launch of the system
 uint8_t is_errors = 0;//global variable for the error existing sighn on LED. If there are any serious problems - the LED will display "|" not ":"
